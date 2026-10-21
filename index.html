@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Experience | Midterm Practical</title>
+    <!-- Task 3: Link external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Semantic Landmark: Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="brand-area">
+                <span class="crest-symbol">⚡</span>
+                <span class="brand-name">PORSCHE</span>
+            </div>
+            <!-- Semantic Landmark: Nav -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#overview">911 GT3 RS</a></li>
+                    <li><a href="#specs">Specifications</a></li>
+                    <li><a href="#booking">Book Drive</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Semantic Landmark: Main Content -->
+    <main class="container">
+        
+        <!-- Section 1: Hero Model Feature with Working Image -->
+        <section id="overview" class="card hero-card">
+            <div class="card-badge">PORSCHE GT DIVISION</div>
+            <h2>The 911 GT3 RS: Pure Motorsport</h2>
+            <p>Engineered for maximum downforce and lightweight agility. Featuring a high-revving 4.0-liter naturally aspirated engine and active drag reduction system (DRS) directly derived from racing technology.</p>
+            
+            <!-- Working Porsche Image with Alt Text -->
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1200&q=80" 
+                     alt="Sleek silver Porsche sports car parked on a mountain pass curve" 
+                     class="hero-img">
+            </div>
+        </section>
+
+        <!-- Section 2: Specifications Table -->
+        <section id="specs" class="card">
+            <h2>Performance Matrix</h2>
+            <p>Compare powertrain metrics, acceleration limits, and track options across the 911 lineup.</p>
+            
+            <!-- Data table with caption, thead, tbody, and th scope attributes -->
+            <div class="table-responsive">
+                <table>
+                    <caption>Porsche 911 Performance & Engineering Metrics</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Variant</th>
+                            <th scope="col">Horsepower</th>
+                            <th scope="col">0-60 MPH</th>
+                            <th scope="col">Track Package</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">911 Carrera S</th>
+                            <td>443 HP</td>
+                            <td>3.3s</td>
+                            <td><span class="badge badge-carrera">Sport Chrono</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">911 Turbo S</th>
+                            <td>640 HP</td>
+                            <td>2.6s</td>
+                            <td><span class="badge badge-turbo">Aero Active</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">911 GT3 RS</th>
+                            <td>518 HP</td>
+                            <td>3.0s</td>
+                            <td><span class="badge badge-weissach">Weissach Package</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 3: Interactive Form -->
+        <section id="booking" class="card">
+            <h2>Request a Private Track Session</h2>
+            <p>Experience Porsche performance firsthand. Submit your credentials below to reserve your slot at the Porsche Experience Center.</p>
+            
+            <!-- Form with label for matching every control explicitly -->
+            <form action="#" method="post" class="porsche-form">
+                <div class="form-group">
+                    <label for="driver-name">Full Name:</label>
+                    <input type="text" id="driver-name" name="driver-name" required placeholder="e.g. Angelo Romero">
+                </div>
+
+                <div class="form-group">
+                    <label for="driver-email">Email Address:</label>
+                    <input type="email" id="driver-email" name="driver-email" required placeholder="angelo@porsche-experience.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="preferred-model">Select Vehicle Configuration:</label>
+                    <select id="preferred-model" name="preferred-model" required>
+                        <option value="">-- Choose Your Porsche Model --</option>
+                        <option value="carrera-s">Porsche 911 Carrera S</option>
+                        <option value="turbo-s">Porsche 911 Turbo S</option>
+                        <option value="gt3-rs">Porsche 911 GT3 RS</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-porsche">Reserve Drive Experience</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Semantic Landmark: Footer (Repository info removed) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Romero. All rights reserved. Porsche AG Theme.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
